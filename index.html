@@ -4,86 +4,87 @@
 <head>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/FitnessReportFavicon.webp" type="image/webp">
-
     <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- Import materialize.css -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
     <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!-- Summary -->
     <meta name="description" content="News and Information about Fitness and Working out" />
-
     <!-- Author -->
     <meta name="author" content="Cristian Nita" />
-
     <!-- Keywords -->
     <meta name="keywords" content="fitness, gym, workout" />
-
     <!-- Title -->
     <title>The Fitness Report | Home</title>
 </head>
 
 <body>
     <header>
-        <nav class="blue">
-            <div class="nav-wrapper container">
-                <a href="#" class="brand-logo">The Fitness Report</a>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-                <a href="#" data-target="mobile-sidenav" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
+                <a href="index.html" class="brand-logo">The Fitness Report</a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="active"><a href="#"><i class="material-icons left">menu</i>News</a></li>
-                    <li><a href="#"><i class="material-icons left">event</i>Events</a></li>
-                    <li><a href="#"><i class="material-icons left">fitness_center</i>Gym</a></li>
+                    <li class="active"><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="news.html"><i class="material-icons left">newspaper</i>News</a></li>
+                    <li><a href="training.html"><i class="material-icons left">fitness_center</i>Training</a></li>
+                    <li><a href="nutrition.html"><i class="material-icons left">restaurant</i>Nutrition</a></li>
+                    <li><a href="about.html"><i class="material-icons left">info</i>About</a></li>
                 </ul>
-                <!-- TODO account icon -->
             </div>
 
             <ul class="sidenav" id="mobile-sidenav">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="news.html"><i class="material-icons left">newspaper</i>News</a></li>
+                <li><a href="training.html"><i class="material-icons left">fitness_center</i>Training</a></li>
+                <li><a href="nutrition.html"><i class="material-icons left">restaurant</i>Nutrition</a></li>
+                <li><a href="about.html"><i class="material-icons left">info</i>About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- News & Events / News & Community Posts / Trending News & Blog Posts
-Topics
-* see youtube vids and search posts
-Post
-Image
-Title
-Excerpt
-Author
-Read more link
 
-Exercises: Machine calistenics
-
-featured exercises for each muscle group
-feature split
-feature calisnenics
-
-link to see more
-
-Food: Diets and Suplements
-feature food of the week
-most popular recipees
-people love this ...
-
-newsletter -->
+    <main class="container">
+        <section>
+            <h2>Trending News</h2>
+            <!-- Topics
+            * see youtube vids and search posts
+            Post
+            Image
+            Title
+            Excerpt
+            Author
+            Read more link -->
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Training</h2>
+            <!-- Exercises: Machine calistenics
+            featured exercises for each muscle group
+            feature split
+            feature calisnenics -->
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Nutrition</h2>
+            <!-- Food: Diets and Suplements
+            feature food of the week
+            most popular recipees
+            people love this ... -->
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Newsletter</h2>
+        </section>
     </main>
-
 
     <footer class="page-footer blue">
         <div class="container">
@@ -91,7 +92,8 @@ newsletter -->
                 <div class="col l6 s12">
                     <h5 class="white-text">The Fitness Journal</h5>
                     <p class="grey-text text-lighten-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, id?
+                        The largest selection of fitness articles, exercises, workouts, supplements, and community to
+                        help you reach your goals!
                     </p>
                 </div>
 
@@ -108,14 +110,22 @@ newsletter -->
         </div>
 
         <div class="footer-copyright">
-            <p class="container center">© 2014 Copyright Text</p>
+            <div class="container center">
+                <p>© 2022 The Fitness Report. All rights reserved.</p>
+
+                <p>Always consult with a qualified healthcare professional prior to beginning any diet or exercise
+                    program
+                    or taking any dietary supplement.
+                    The content on our website is for informational and educational purposes only and is not intended as
+                    medical advice or to replace a relationship
+                    with a qualified healthcare professional.
+                </p>
+            </div>
         </div>
     </footer>
-    <!-- TODO logo -->
-    <!-- TODO sitemap -->
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
 
     <!-- Link to external Javascript -->
     <script src="js/script.js"></script>
