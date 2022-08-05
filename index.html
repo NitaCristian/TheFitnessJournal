@@ -4,10 +4,6 @@
 <head>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/FitnessReportFavicon.webp" type="image/webp">
-    <!-- Import Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Import materialize.css -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
     <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Let browser know website is optimized for mobile -->
@@ -15,39 +11,36 @@
 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!-- Summary -->
-    <meta name="description" content="News and Information about Fitness and Working out" />
+    <meta name="description"
+        content="To assist you in achieving your goals, we offer a wide range of fitness articles, workouts, exercises and supplements. " />
     <!-- Author -->
     <meta name="author" content="Cristian Nita" />
     <!-- Keywords -->
-    <meta name="keywords" content="fitness, gym, workout" />
+    <meta name="keywords" content="fitness, gym, workout, news, nutrition, bodybuilding" />
     <!-- Title -->
     <title>The Fitness Report | Home</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="nav-wrapper blue">
-                <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <nav class="navbar">
+            <div class="brand-title">The Fitness Report</div>
 
-                <a href="index.html" class="brand-logo">The Fitness Report</a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="active"><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-                    <li><a href="news.html"><i class="material-icons left">newspaper</i>News</a></li>
-                    <li><a href="training.html"><i class="material-icons left">fitness_center</i>Training</a></li>
-                    <li><a href="nutrition.html"><i class="material-icons left">restaurant</i>Nutrition</a></li>
-                    <li><a href="about.html"><i class="material-icons left">info</i>About</a></li>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
-
-            <ul class="sidenav" id="mobile-sidenav">
-                <li class="active"><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="news.html"><i class="material-icons left">newspaper</i>News</a></li>
-                <li><a href="training.html"><i class="material-icons left">fitness_center</i>Training</a></li>
-                <li><a href="nutrition.html"><i class="material-icons left">restaurant</i>Nutrition</a></li>
-                <li><a href="about.html"><i class="material-icons left">info</i>About</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -87,7 +80,7 @@
     </main>
 
     <footer class="page-footer blue">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">The Fitness Journal</h5>
@@ -121,11 +114,8 @@
                     with a qualified healthcare professional.
                 </p>
             </div>
-        </div>
+        </div> -->
     </footer>
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="js/materialize.min.js"></script>
 
     <!-- Link to external Javascript -->
     <script src="js/script.js"></script>
