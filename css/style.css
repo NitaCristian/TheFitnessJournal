@@ -144,3 +144,8 @@
      margin: 0 auto;
      padding: 0 3rem;
  }
+
+
+ hr {
+     border-top: 1px solid black;
+ }
