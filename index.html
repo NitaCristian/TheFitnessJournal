@@ -26,12 +26,13 @@
         <nav class="navbar">
             <div class="brand-title">The Fitness Report</div>
 
-            <a href="http://" class="toggle-button">
+            <span class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </a>
+            </span>
 
+            <!-- TODO - "active" class for current page -->
             <div class="navbar-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,10 +45,9 @@
         </nav>
     </header>
 
-
     <main>
         <section>
-            <h2>Trending News</h2>
+            <h1>Trending News</h1>
 
             <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
             <article>
@@ -60,7 +60,7 @@
                     by lactic acid build-up, so it's crucial to understand why this occurs and how to avoid it.
                 </p>
                 <h5>by Teri N. Buffington</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
 
             <!-- https://www.sciencedaily.com/releases/2022/07/220725124104.htm -->
@@ -74,7 +74,7 @@
                     working out.
                 </p>
                 <h5>by Anthony J. Cox</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
 
             <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/added-sugars-hiding-in-your-diet -->
@@ -87,14 +87,14 @@
                     sugar, you probably ingest more sugar than you know.
                 </p>
                 <h5>by Lynnette J. Cordero</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
         </section>
 
         <hr>
 
         <section>
-            <h2>Training</h2>
+            <h1>Training</h1>
 
             <article>
                 <!-- https://unsplash.com/photos/miCR9VIQ5PE -->
@@ -118,7 +118,7 @@
         <hr>
 
         <section>
-            <h2>Nutrition</h2>
+            <h1>Nutrition</h1>
 
             <!-- https://blog.myfitnesspal.com/clean-green-mango-kale-smoothie/ -->
             <article>
@@ -129,7 +129,7 @@
                     A smoothie is a simple method to get the additional greens you need in your diet.
                 </p>
                 <h5>by Drucilla D. Doris</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
 
             <!-- https://blog.myfitnesspal.com/pina-colada-pops-with-chocolate-coconut-shells/ -->
@@ -142,7 +142,7 @@
                     of juicy, ripe pineapple.
                 </p>
                 <h5>by Tammie C. Hice</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
 
             <!-- https://blog.myfitnesspal.com/spicy-burgers-with-tahini-sauce-and-harissa-carrot-slaw/ -->
@@ -155,7 +155,7 @@
                     sauce, and warm whole-grain naan.
                 </p>
                 <h5>by William A. Shirley</h5>
-                <a href="http://">Read more</a>
+                <span>Read more</span>
             </article>
 
             <!-- Quick links to those two categories -->
@@ -179,32 +179,33 @@
                         Get the latest news sent right to your inbox!
                     </p>
                     <input type="text">
+                    <button>Send</button>
                 </div>
             </div>
 
             <div class="footer-links">
                 <ul>
                     <li>Sitemap</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="nutrition.html">Nutrition</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><span>Home</span></li>
+                    <li><span>News</span></li>
+                    <li><span>Training</span></li>
+                    <li><span>Nutrition</span></li>
+                    <li><span>About</span></li>
                 </ul>
                 <ul>
                     <li>Follow Us</li>
-                    <li><a href="http://">Instagram</a></li>
-                    <li><a href="http://">Facebook</a></li>
-                    <li><a href="http://">Twitter</a></li>
-                    <li><a href="http://">LinkedIn</a></li>
+                    <li><span>Instagram</span></li>
+                    <li><span>Facebook</span></li>
+                    <li><span>Twitter</span></li>
+                    <li><span>LinkedIn</span></li>
                 </ul>
                 <ul>
                     <li>Useful Links</li>
-                    <li><a href="http://">Careers</a></li>
-                    <li><a href="http://">Privacy Policy</a></li>
-                    <li><a href="http://">Cookie Preferences</a></li>
-                    <li><a href="http://">Terms and Conditions</a></li>
-                    <li><a href="http://">Support</a></li>
+                    <li><span>Careers</span></li>
+                    <li><span>Privacy Policy</span></li>
+                    <li><span>Cookie Preferences</span></li>
+                    <li><span>Terms and Conditions</span></li>
+                    <li><span>Support</span></li>
                 </ul>
             </div>
         </div>
@@ -222,7 +223,6 @@
         </div>
     </footer>
 
-    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
     <!-- Link to external Javascript -->
     <script src="js/script.js"></script>
 </body>
