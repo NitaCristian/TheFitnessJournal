@@ -8,6 +8,8 @@ main {
 flex: 1 0 auto;
 } */
 
+/* General */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,6 +41,8 @@ hr {
 span {
     cursor: pointer;
 }
+
+/* Navbar */
 
 .brand-title {
     font-size: 1.5rem;
@@ -122,6 +126,8 @@ span {
     }
 }
 
+/* Footer */
+
 .footer {
     color: white;
     background-color: #333;
@@ -177,4 +183,34 @@ span {
     .footer-content {
         grid-template-columns: 1fr;
     }
+}
+
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+input {
+    display: block;
+}
+
+textarea {
+    display: block;
 }
