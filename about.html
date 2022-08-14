@@ -1,82 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- head is a container for medatata -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Don't load any favicon -->
+    <link rel="shortcut icon" href="#" type="image/webp">
+    <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+
+    <!-- Link to external Javascript -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Summary of the webpage -->
+    <meta name="description"
+        content="You can reach your goals with our large selection of fitness articles, workouts, exercises, and supplements!" />
+    <!-- Author of the webpage -->
+    <meta name="author" content="Cristian Nita" />
+    <!-- Keywords that describe the content of the webpage -->
+    <meta name="keywords" content="fitness, gym, workout, news, nutrition, bodybuilding" />
+    <!-- Title -->
+
+    <title>The Fitness Report | About</title>
 </head>
 
+<!-- Body contains all the visible content -->
+
 <body>
-    <section>
-        <h1>About Us</h1>
+    <!-- Header contains the navigation -->
+    <header>
+        <!-- Navbar made up of brand title, navigation links to all five pages, and a hamburger menu for mobile devices -->
+        <nav class="navbar">
+            <!-- Title of the company, the brand title -->
+            <div class="brand-title">The Fitness Report</div>
 
-        <p>
-            The Fitness Report is a small online publication started by a group of passionate people. Our goal is to
-            deliver quality and science-based information to a broad audience in an effort to change minds and empower
-            people to lead better, healthier, and more satisfying lives.
+            <!-- The hamburger menu for mobile devices, invisible by default -->
+            <span class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </span>
 
-            Our readers may come from different backgrounds with different opportunities
+            <!-- Links to all five pages of the website -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li class="on"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            NOT FINISHED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        </p>
+    <!-- Main is a container for all the content specific for this about page; about us, FAQ, contact us, and location -->
+    <main class="container">
+        <!-- About us section -->
+        <section>
+            <h1>About Us</h1>
 
-        <h2>FAQ</h2>
+            <p>
+                The Fitness Report is a small online publication started by a group of passionate people. Our goal is to
+                deliver quality and science-based information to a broad audience in an effort to change minds and
+                empower
+                people to lead better, healthier, and more satisfying lives.
+                <br>
+                Our readers may come from different backgrounds with different opportunities
 
-        <details>
-            <summary>Is the provided content meant to serve as medical advice?</summary>
-            Always consult with a qualified healthcare professional prior to beginning any diet or exercise program or
-            taking any dietary supplement. The content on our website is for informational and educational purposes only
-            and is not intended as medical advice or to replace a relationship with a qualified healthcare professional.
-        </details>
+                NOT FINISHED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            </p>
+        </section>
 
-        <details>
-            <summary>Can I unsubscribe from the newsletter?</summary>
-            No.
-        </details>
+        <!-- FAQ section -->
+        <section>
+            <h1>FAQ</h1>
 
-        <details>
-            <summary>Is the information updated regularly?</summary>
-            Board-certified physicians and nutrition and exercise healthcare specialists analyze Fitness Report
-            articles. The information is extensive and accurate, representing the most recent evidence-based research,
-            according to medical experts. Before being published and after significant updates, content is verified.
-        </details>
-    </section>
+            <details>
+                <summary>Is the provided content meant to serve as medical advice?</summary>
+                Always consult with a qualified healthcare professional prior to beginning any diet or exercise program
+                or
+                taking any dietary supplement. The content on our website is for informational and educational purposes
+                only
+                and is not intended as medical advice or to replace a relationship with a qualified healthcare
+                professional.
+            </details>
 
-    <hr>
+            <details>
+                <summary>Can I unsubscribe from the newsletter?</summary>
+                No.
+            </details>
 
-    <section>
-        <h1>Contact Us</h1>
+            <details>
+                <summary>Is the information updated regularly?</summary>
+                Board-certified physicians and nutrition and exercise healthcare specialists analyze Fitness Report
+                articles. The information is extensive and accurate, representing the most recent evidence-based
+                research,
+                according to medical experts. Before being published and after significant updates, content is verified.
+            </details>
+        </section>
 
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name">
+        <!-- Contact us section -->
+        <section>
+            <h1>Contact Us</h1>
 
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
 
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
 
-            <label for="terms">Terms and Conditions</label>
-            <input type="checkbox" name="terms" id="terms">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Your message to us..." required cols="30"
+                    rows="10"></textarea>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+                <label for="terms">Terms and Conditions</label>
+                <input type="checkbox" name="terms" id="terms" required>
 
-    <hr>
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
-    <section>
-        <h1>Location</h1>
+        <!-- Location section -->
+        <section>
+            <h1>Location</h1>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87425.82294559764!2d23.546472964807915!3d46.78348183619039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1659982118825!5m2!1sro!2sro"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87425.82294559764!2d23.546472964807915!3d46.78348183619039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1659982118825!5m2!1sro!2sro"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer section contains some information and a newsletter, links and a copyright -->
+    <footer class="footer">
+        <!-- Main content of the footer -->
+        <div class="footer-content container">
+            <!-- Information such as brand title, motto and the newsletter -->
+            <div class="footer-info">
+                <div>
+                    <h2>The Fitness Report</h2>
+                    <p>
+                        You can reach your goals with our large selection of fitness articles, workouts, exercises, and
+                        supplements!
+                    </p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Get the latest news sent right to your inbox!
+                    </p>
+                    <input type="text">
+                    <button>Send</button>
+                </div>
+            </div>
+            <!-- Links to all pages of the website, social media, and other useful links -->
+            <div class="footer-links">
+                <ul>
+                    <li>Sitemap</li>
+                    <li><span>Home</span></li>
+                    <li><span>News</span></li>
+                    <li><span>Training</span></li>
+                    <li><span>Nutrition</span></li>
+                    <li><span>About</span></li>
+                </ul>
+                <ul>
+                    <li>Follow Us</li>
+                    <li><span>Instagram</span></li>
+                    <li><span>Facebook</span></li>
+                    <li><span>Twitter</span></li>
+                    <li><span>LinkedIn</span></li>
+                </ul>
+                <ul>
+                    <li>Useful Links</li>
+                    <li><span>Careers</span></li>
+                    <li><span>Privacy Policy</span></li>
+                    <li><span>Cookie Preferences</span></li>
+                    <li><span>Terms and Conditions</span></li>
+                    <li><span>Support</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Last section containing the copyright -->
+        <div class="footer-copyright">
+            <p>© 2022 The Fitness Report. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

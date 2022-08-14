@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head is a container for medatata -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Don't load any favicon -->
+    <link rel="shortcut icon" href="#" type="image/webp">
+    <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+
+    <!-- Link to external Javascript -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Summary of the webpage -->
+    <meta name="description"
+        content="You can reach your goals with our large selection of fitness articles, workouts, exercises, and supplements!" />
+    <!-- Author of the webpage -->
+    <meta name="author" content="Cristian Nita" />
+    <!-- Keywords that describe the content of the webpage -->
+    <meta name="keywords" content="fitness, gym, workout, news, nutrition, bodybuilding" />
+    <!-- Title -->
+
+    <title>The Fitness Report | News</title>
 </head>
 
+<!-- Body contains all the visible content -->
+
 <body>
-    <main>
+    <!-- Header contains the navigation -->
+    <header>
+        <!-- Navbar made up of brand title, navigation links to all five pages, and a hamburger menu for mobile devices -->
+        <nav class="navbar">
+            <!-- Title of the company, the brand title -->
+            <div class="brand-title">The Fitness Report</div>
+
+            <!-- The hamburger menu for mobile devices, invisible by default -->
+            <span class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </span>
+
+            <!-- Links to all five pages of the website -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="on"><a href="news.html">News</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main is a container for all the content specific for this news page;  trending news, science, nutrition and training news-->
+    <main class="container">
         <!-- TODO - Carousel -->
+        <!-- Trending news -->
         <section>
             <h1>Trending News</h1>
             <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
@@ -56,8 +106,7 @@
             </article>
         </section>
 
-        <hr>
-
+        <!-- Science news -->
         <!-- TODO - Grid or Carousel -->
         <section>
             <h1>Science</h1>
@@ -105,8 +154,7 @@
             </article>
         </section>
 
-        <hr>
-
+        <!-- Nutrition news -->
         <section>
             <h1>Nutrition</h1>
 
@@ -152,8 +200,7 @@
             </article>
         </section>
 
-        <hr>
-
+        <!-- Training news -->
         <section>
             <h1>Training</h1>
 
@@ -201,6 +248,62 @@
             </article>
         </section>
     </main>
+
+    <!-- Footer section contains some information and a newsletter, links and a copyright -->
+    <footer class="footer">
+        <!-- Main content of the footer -->
+        <div class="footer-content container">
+            <!-- Information such as brand title, motto and the newsletter -->
+            <div class="footer-info">
+                <div>
+                    <h2>The Fitness Report</h2>
+                    <p>
+                        You can reach your goals with our large selection of fitness articles, workouts, exercises, and
+                        supplements!
+                    </p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Get the latest news sent right to your inbox!
+                    </p>
+                    <input type="text">
+                    <button>Send</button>
+                </div>
+            </div>
+            <!-- Links to all pages of the website, social media, and other useful links -->
+            <div class="footer-links">
+                <ul>
+                    <li>Sitemap</li>
+                    <li><span>Home</span></li>
+                    <li><span>News</span></li>
+                    <li><span>Training</span></li>
+                    <li><span>Nutrition</span></li>
+                    <li><span>About</span></li>
+                </ul>
+                <ul>
+                    <li>Follow Us</li>
+                    <li><span>Instagram</span></li>
+                    <li><span>Facebook</span></li>
+                    <li><span>Twitter</span></li>
+                    <li><span>LinkedIn</span></li>
+                </ul>
+                <ul>
+                    <li>Useful Links</li>
+                    <li><span>Careers</span></li>
+                    <li><span>Privacy Policy</span></li>
+                    <li><span>Cookie Preferences</span></li>
+                    <li><span>Terms and Conditions</span></li>
+                    <li><span>Support</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Last section containing the copyright -->
+        <div class="footer-copyright">
+            <p>© 2022 The Fitness Report. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

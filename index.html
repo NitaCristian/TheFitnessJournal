@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- TODO - add tags to posts -->
+<!-- Head is a container for medatata -->
 
 <head>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/FitnessReportFavicon.webp" type="image/webp">
+    <!-- Don't load any favicon -->
+    <link rel="shortcut icon" href="#" type="image/webp">
     <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Link to external Javascript -->
     <script src="js/script.js" defer></script>
+
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <!-- Summary -->
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Summary of the webpage -->
     <meta name="description"
         content="You can reach your goals with our large selection of fitness articles, workouts, exercises, and supplements!" />
-    <!-- Author -->
+    <!-- Author of the webpage -->
     <meta name="author" content="Cristian Nita" />
-    <!-- Keywords -->
+    <!-- Keywords that describe the content of the webpage -->
     <meta name="keywords" content="fitness, gym, workout, news, nutrition, bodybuilding" />
     <!-- Title -->
+
     <title>The Fitness Report | Home</title>
 </head>
 
+<!-- Body contains all the visible content -->
+
 <body>
+    <!-- Header contains the navigation -->
     <header>
+        <!-- Navbar made up of brand title, navigation links to all five pages, and a hamburger menu for mobile devices -->
         <nav class="navbar">
+            <!-- Title of the company, the brand title -->
             <div class="brand-title">The Fitness Report</div>
 
+            <!-- The hamburger menu for mobile devices, invisible by default -->
             <span class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </span>
 
-            <!-- TODO - "active" class for current page -->
+            <!-- Links to all five pages of the website -->
             <div class="navbar-links">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="on"><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="training.html">Training</a></li>
                     <li><a href="nutrition.html">Nutrition</a></li>
@@ -49,9 +58,10 @@
         </nav>
     </header>
 
-    <main>
-        <!-- TODO - Carousel -->
-        <section class="container">
+    <!-- Main is a container for all the content specific for this home page; trending news, training, and nutrition -->
+    <main class="container">
+        <!-- Trending news section -->
+        <section>
             <h1>Trending News</h1>
 
             <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
@@ -96,9 +106,8 @@
             </article>
         </section>
 
-        <hr>
-
         <!-- TODO - Showcase -->
+        <!-- Training section -->
         <section>
             <h1>Training</h1>
 
@@ -124,9 +133,8 @@
             </article>
         </section>
 
-        <hr>
-
         <!-- TODO - Grid -->
+        <!-- Nutrition section -->
         <section>
             <h1>Nutrition</h1>
 
@@ -173,9 +181,11 @@
         </section>
     </main>
 
-    <!-- TODO - Improve -->
+    <!-- Footer section contains some information and a newsletter, links and a copyright -->
     <footer class="footer">
-        <div class="footer-content">
+        <!-- Main content of the footer -->
+        <div class="footer-content container">
+            <!-- Information such as brand title, motto and the newsletter -->
             <div class="footer-info">
                 <div>
                     <h2>The Fitness Report</h2>
@@ -194,7 +204,7 @@
                     <button>Send</button>
                 </div>
             </div>
-
+            <!-- Links to all pages of the website, social media, and other useful links -->
             <div class="footer-links">
                 <ul>
                     <li>Sitemap</li>
@@ -221,7 +231,7 @@
                 </ul>
             </div>
         </div>
-
+        <!-- Last section containing the copyright -->
         <div class="footer-copyright">
             <p>© 2022 The Fitness Report. All rights reserved.</p>
         </div>
