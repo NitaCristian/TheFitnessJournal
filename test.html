@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            cursor: pointer;
+            border: 0;
+            background: #ee6354;
+            color: white;
+            padding: 1em 1.5em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+            transition: transform 250ms ease-in;
+        }
+
+        .button-one::after {
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .button-one:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+
+    <style>
+        .card {
+            /* cursor: default; */
+            border: 0.5px solid black;
+            background: #ee6354;
+            color: white;
+
+            width: 200px;
+            padding: 1rem;
+            z-index: 1;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 250ms ease-in;
+            z-index: -1;
+
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .card-first {
+            transition: transform 250ms ease;
+        }
+
+        .card-first::after {
+            transform: scaleY(0);
+            transform-origin: bottom;
+        }
+
+        .card-first:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+
+        .card-first:hover::after {
+            transform: scaleY(1);
+        }
+
+        /* .card+.card {
+            margin-left: 0.5rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <button class="button button-one">Click me</button>
+
+    <div style="display: flex; ">
+        <div class="card card-first">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempora illum laudantium modi doloribus
+                cum
+                maiores possimus voluptate quis! Rerum eum cumque fugiat incidunt impedit facere, laborum cum doloribus
+                molestiae?
+            </p>
+        </div>
+        <div class="card card-first">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempora illum laudantium modi doloribus
+                cum
+                maiores possimus voluptate quis! Rerum eum cumque fugiat incidunt impedit facere, laborum cum doloribus
+                molestiae?
+            </p>
+        </div>
+        <div class="card card-first">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempora illum laudantium modi doloribus
+                cum
+                maiores possimus voluptate quis! Rerum eum cumque fugiat incidunt impedit facere, laborum cum doloribus
+                molestiae?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
