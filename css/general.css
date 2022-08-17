@@ -1,4 +1,3 @@
-/* General */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,9 +13,13 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg, honeydew, gray);
+    background: linear-gradient(45deg, honeydew, grey);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 h1 {

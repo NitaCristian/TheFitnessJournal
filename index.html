@@ -60,16 +60,31 @@
 
     <!-- Main is a container for all the content specific for this home page; trending news, training, and nutrition -->
     <main class="container">
+        <section>
+            <!-- https://fitnessreport.ca/ -->
+            <div class="logo-container">
+                <img src="images/fitness-report-logo.webp" alt="Logo of The Fitness Report" class="logo">
+            </div>
+
+            <h1 class="title">The Fitness Report</h1>
+
+            <p class="text">
+                You can reach your goals with our large selection of fitness articles, workouts, exercises, and
+                supplements!
+            </p>
+
+        </section>
+
         <!-- Trending news section -->
         <section>
             <h1>Trending News</h1>
 
             <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
-            <article class="main-card">
+            <article class="card rounded-card grid-2-cols">
                 <!-- https://unsplash.com/photos/7kEpUPB8vNk -->
                 <img src="images/training/anastase-maragos-barbell-curl.jpg" alt="Man doing barbell curl"
                     loading="lazy">
-                <div class="content">
+                <div class="flex-vertical-layout">
                     <h3>Understanding and Treating Lactic Acid Build-Up</h3>
                     <p>
                         The body converts glucose to lactic acid when it needs energy. When oxygen levels are low, which
@@ -77,16 +92,14 @@
                         inhibited
                         by lactic acid build-up, so it's crucial to understand why this occurs and how to avoid it.
                     </p>
-                    <div class="card-footer">
-                        <h5>by Teri N. Buffington</h5>
-                        <span>Read more</span>
-                    </div>
+                    <h5>by Teri N. Buffington</h5>
+                    <span>Read more</span>
                 </div>
             </article>
 
-            <div class="flex-container">
+            <div class="grid-2-cols">
                 <!-- https://www.sciencedaily.com/releases/2022/07/220725124104.htm -->
-                <article class="secondary-card">
+                <article class="card rounded-card flex-vertical-layout">
                     <!-- https://unsplash.com/photos/Iy7QyzOs1bo -->
                     <img src="images/science/sangharsh-lohakare-genes-dna.jpg" alt="Image of DNA" loading="lazy">
                     <h3>Scientists have found a gene that enhances muscle strength during exercise.</h3>
@@ -96,13 +109,11 @@
                         advantages of
                         working out.
                     </p>
-                    <div class="card-footer">
-                        <h5>by Anthony J. Cox</h5>
-                        <span>Read more</span>
-                    </div>
+                    <h5>by Anthony J. Cox</h5>
+                    <span>Read more</span>
                 </article>
                 <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/added-sugars-hiding-in-your-diet -->
-                <article class="secondary-card">
+                <article class="card rounded-card flex-vertical-layout">
                     <img src="images/nutrition/nyana-stoica-cereal.jpg" alt="Image of a bowl of cereal" loading="lazy">
                     <h3>In Your Diet: Hidden Added Sugars</h3>
                     <p>
@@ -111,10 +122,8 @@
                         added
                         sugar, you probably ingest more sugar than you know.
                     </p>
-                    <div class="card-footer">
-                        <h5>by Lynnette J. Cordero</h5>
-                        <span>Read more</span>
-                    </div>
+                    <h5>by Lynnette J. Cordero</h5>
+                    <span>Read more</span>
                 </article>
             </div>
         </section>
@@ -123,7 +132,7 @@
         <section>
             <h1>Training</h1>
 
-            <div class="grid-container">
+            <div class="grid-3-cols">
                 <article class="showcase-card test1">
                     <!-- https://unsplash.com/photos/qkQwDvRqQY8 -->
                     <img src="images/training/jakob-owens-muscle.jpg" alt="Guy with big muscles" loading="lazy">
@@ -149,9 +158,9 @@
         <section>
             <h1>Nutrition</h1>
 
-            <div class="grid-container">
+            <div class="grid-3-cols">
                 <!-- https://blog.myfitnesspal.com/clean-green-mango-kale-smoothie/ -->
-                <article class="article-card">
+                <article class="card rounded-card flex-vertical-layout">
                     <!--  -->
                     <img src="images/nutrition/clean-green-mango-kale-smoothie-752x472.jpg" alt="Green mango smoothie"
                         loading="lazy">
@@ -159,13 +168,11 @@
                     <p>
                         A smoothie is a simple method to get the additional greens you need in your diet.
                     </p>
-                    <div class="footer-card">
-                        <h5>by Drucilla D. Doris</h5>
-                        <span>Read more</span>
-                    </div>
+                    <h5>by Drucilla D. Doris</h5>
+                    <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/pina-colada-pops-with-chocolate-coconut-shells/ -->
-                <article class="article-card">
+                <article class="card rounded-card flex-vertical-layout">
                     <!--  -->
                     <img src="images/nutrition/pina-colada-pop-752x472.jpg" alt="Pina colada popsicles" loading="lazy">
                     <h3>Pina Colada Popsicles with Chocolate-Coconut Shells</h3>
@@ -178,7 +185,7 @@
                     <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/spicy-burgers-with-tahini-sauce-and-harissa-carrot-slaw/ -->
-                <article class="article-card">
+                <article class="card rounded-card flex-vertical-layout">
                     <!--  -->
                     <img src="images/nutrition/spicy-burgers-with-tahini-sauce-and-harissa-carrot-slaw-752x472.jpg"
                         alt="Burgers with tahini sauce" loading="lazy">
@@ -216,8 +223,12 @@
                     <p>
                         Get the latest news sent right to your inbox!
                     </p>
-                    <input type="text">
-                    <button>Send</button>
+
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                        <button>Send</button>
+                    </form>
                 </div>
             </div>
             <!-- Links to all pages of the website, social media, and other useful links -->
