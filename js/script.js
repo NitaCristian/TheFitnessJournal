@@ -1,3 +1,7 @@
+// --------------
+// Hamburger menu
+//---------------
+
 // Get the toggle button
 const toggleButton = document.getElementsByClassName("toggle-button")[0]
 // Get the navbar links
@@ -8,11 +12,14 @@ toggleButton.addEventListener("click", () => {
     navbarLinks.classList.toggle("active");
 })
 
+// --------------------
+// Supplements Carousel
+// --------------------
 
 // Get all the supplements articles
 const supplements = document.querySelectorAll('#supplements>article')
 // Get the two buttons 
-const buttons = document.querySelectorAll('.circle-button')
+const buttons = document.querySelectorAll('.btn-circle')
 // Add a listener for the click event
 if (buttons != null)
     buttons.forEach(button => {
@@ -25,6 +32,10 @@ if (buttons != null)
         })
     })
 
+
+// ------------------------
+// Load More Recipes Button
+// ------------------------
 
 // Get all the recipes
 const recipes = document.querySelectorAll('#recipes>article')
