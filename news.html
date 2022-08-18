@@ -8,10 +8,8 @@
     <link rel="shortcut icon" href="#" type="image/webp">
     <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Link to external Javascript -->
     <script src="js/script.js" defer></script>
-
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Specifies the character encoding for the HTML document -->
@@ -64,20 +62,20 @@
         <section>
             <h1 class="title">News</h1>
 
-            <p class="text">
+            <p class="description">
                 You can find the most important news about fitness here!
             </p>
         </section>
 
-        <!-- Trending news section -->
+        <!-- Trending news section; contains one main article and two smaller articles -->
         <section>
             <h1>Trending News</h1>
 
-            <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
+            <!-- Main article -->
             <article class="card rounded-card grid-2-cols">
-                <!-- https://unsplash.com/photos/7kEpUPB8vNk -->
                 <img src="images/training/anastase-maragos-barbell-curl.jpg" alt="Man doing barbell curl"
                     loading="lazy">
+
                 <div class="flex-vertical-layout">
                     <h3>Understanding and Treating Lactic Acid Build-Up</h3>
                     <p>
@@ -91,10 +89,9 @@
                 </div>
             </article>
 
+            <!-- Smaller articles -->
             <div class="grid-2-cols">
-                <!-- https://www.sciencedaily.com/releases/2022/07/220725124104.htm -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/Iy7QyzOs1bo -->
                     <img src="images/science/sangharsh-lohakare-genes-dna.jpg" alt="Image of DNA" loading="lazy">
                     <h3>Scientists have found a gene that enhances muscle strength during exercise.</h3>
                     <p>
@@ -106,7 +103,7 @@
                     <h5>by Anthony J. Cox</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/added-sugars-hiding-in-your-diet -->
+
                 <article class="card rounded-card flex-vertical-layout">
                     <img src="images/nutrition/nyana-stoica-cereal.jpg" alt="Image of a bowl of cereal" loading="lazy">
                     <h3>In Your Diet: Hidden Added Sugars</h3>
@@ -122,14 +119,12 @@
             </div>
         </section>
 
-        <!-- Science news -->
-        <section>
+        <!-- Science news; contains three science related news -->
+        <section id="science-news">
             <h1>Science</h1>
 
             <div class="grid-3-cols">
-                <!-- https://www.sciencedaily.com/releases/2022/08/220802121722.htm -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/1eL99eGXp0g -->
                     <img src="images/science/chuttersnap-spine.jpg" alt="Spine" loading="lazy">
                     <h3>An efficient new medication for persistent back pain</h3>
                     <p>
@@ -142,9 +137,8 @@
                     <h5>by Jodie S. Salas</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://www.sciencedaily.com/releases/2022/07/220725105618.htm -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/J154nEkpzlQ -->
                     <img src="images/training/gabin-vallet-people-exercise.jpg" alt="Group of people exercising"
                         loading="lazy">
                     <h3>
@@ -160,9 +154,8 @@
                     <h5>by Jodie S. Salas</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://www.sciencedaily.com/releases/2022/08/220803112611.htm -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/3KGF9R_0oHs -->
                     <img src="images/science/robina-weermeijer-brain.jpg" alt="Image of a brain" loading="lazy">
                     <h3>Moderate physical activity helps the brain, according to a research</h3>
                     <p>
@@ -176,14 +169,12 @@
             </div>
         </section>
 
-        <!-- Nutrition news -->
-        <section>
+        <!-- Nutrition news; contains three nutrition related news -->
+        <section id="nutrition-news">
             <h1>Nutrition</h1>
 
             <div class="grid-3-cols">
-                <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/mediterranean-diet-for-people-with-diabetes -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/BHD2OxkYGSk -->
                     <img src="images/nutrition/jez-timms-mediterranean-food.jpg" alt="Mediterranean food"
                         loading="lazy">
                     <h3>Diabetes and the Mediterranean Diet</h3>
@@ -195,9 +186,8 @@
                     <h5>by Paul V. Marks</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/how-the-pandemic-shifted-dieting-attitudes -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/A4Ax1ApccfA -->
                     <img src="images/nutrition/joel-muniz-pandemic-food.jpg" alt="People with masks handing food"
                         loading="lazy">
                     <h3>Changes in Dieting Attitudes Due to the Pandemic</h3>
@@ -210,9 +200,8 @@
                     <h5>by Lynnette J. Cordero</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/top-healthy-food-trends -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/_TLKIVSW6Do -->
                     <img src="images/nutrition/lefteris-kallergis-vegan-burger.jpg" alt="Vegan burger" loading="lazy">
                     <h3>The National Restaurant Show's Top 6 Food Trends</h3>
                     <p>
@@ -227,14 +216,12 @@
             </div>
         </section>
 
-        <!-- Training news -->
-        <section>
+        <!-- Training news; contains three training related news -->
+        <section id="training-news">
             <h1>Training</h1>
 
             <div class="grid-3-cols">
-                <!-- https://www.healthline.com/health/fitness-exercise/best-chest-exercises -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/fG0p4Qh_aWI -->
                     <img src="images/training/anastase-maragos-chest-exercise.jpg" alt="Man doing chest exercise"
                         loading="lazy">
                     <h3>The Best Chest Exercises for Men</h3>
@@ -248,9 +235,8 @@
                     <h5>by Teri N. Buffington</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://www.verywellfit.com/kickboxing-for-beginners-5216164 -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/h8sl-oNcat0 -->
                     <img src="images/training/pablo-rebolledo-kick-box.jpg" alt="Men fighting" loading="lazy">
                     <h3>How to Start Kickboxing for Beginners</h3>
                     <p>
@@ -262,9 +248,8 @@
                     <h5>by Steven P. Boyd</h5>
                     <span>Read more</span>
                 </article>
-                <!-- https://www.verywellfit.com/should-you-exercise-on-an-empty-stomach-1231583 -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/wKnLfKFZgqk -->
                     <img src="images/nutrition/total-shape-burn-fat-plate.jpg" alt="Plate with words" loading="lazy">
                     <h3>Fat Loss and Exercise on an Empty Stomach</h3>
                     <p>

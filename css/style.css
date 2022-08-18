@@ -46,6 +46,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 li {
@@ -368,6 +369,11 @@ button[type=submit] {
     text-align: center;
 }
 
+.card a {
+    margin-top: auto;
+    text-align: center;
+}
+
 .rounded-card {
     border-radius: 10px;
 }
@@ -455,7 +461,7 @@ button[type=submit] {
     font-size: xxx-large;
 }
 
-.text {
+.description {
     text-align: center;
     font-size: larger;
     padding: 0 10rem;

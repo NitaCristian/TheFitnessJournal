@@ -8,10 +8,8 @@
     <link rel="shortcut icon" href="#" type="image/webp">
     <!-- Import style.css -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Link to external Javascript -->
     <script src="js/script.js" defer></script>
-
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Specifies the character encoding for the HTML document -->
@@ -62,28 +60,27 @@
     <main class="container">
         <!-- Top section with title and a description; contains the logo of the webiste -->
         <section>
-            <!-- https://fitnessreport.ca/ -->
             <div class="logo-container">
-                <img src="images/fitness-report-logo.webp" alt="Logo of The Fitness Report" class="logo">
+                <img src="images/other/fitness-report-logo.webp" alt="Logo of The Fitness Report" class="logo">
             </div>
 
             <h1 class="title">The Fitness Report</h1>
 
-            <p class="text">
+            <p class="description">
                 You can reach your goals with our large selection of fitness articles, workouts, exercises, and
                 supplements!
             </p>
         </section>
 
-        <!-- Trending news section -->
+        <!-- Trending news section; contains one main article and two smaller articles -->
         <section>
             <h1>Trending News</h1>
 
-            <!-- https://www.verywellfit.com/lactic-acid-build-up-what-it-means-5197207 -->
+            <!-- Main article -->
             <article class="card rounded-card grid-2-cols">
-                <!-- https://unsplash.com/photos/7kEpUPB8vNk -->
                 <img src="images/training/anastase-maragos-barbell-curl.jpg" alt="Man doing barbell curl"
                     loading="lazy">
+
                 <div class="flex-vertical-layout">
                     <h3>Understanding and Treating Lactic Acid Build-Up</h3>
                     <p>
@@ -93,14 +90,13 @@
                         by lactic acid build-up, so it's crucial to understand why this occurs and how to avoid it.
                     </p>
                     <h5>by Teri N. Buffington</h5>
-                    <span>Read more</span>
+                    <a href="news.html">Read more</a>
                 </div>
             </article>
 
+            <!-- Smaller articles -->
             <div class="grid-2-cols">
-                <!-- https://www.sciencedaily.com/releases/2022/07/220725124104.htm -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!-- https://unsplash.com/photos/Iy7QyzOs1bo -->
                     <img src="images/science/sangharsh-lohakare-genes-dna.jpg" alt="Image of DNA" loading="lazy">
                     <h3>Scientists have found a gene that enhances muscle strength during exercise.</h3>
                     <p>
@@ -110,9 +106,9 @@
                         working out.
                     </p>
                     <h5>by Anthony J. Cox</h5>
-                    <span>Read more</span>
+                    <a href="news.html">Read more</a>
                 </article>
-                <!-- https://health.usnews.com/health-news/blogs/eat-run/articles/added-sugars-hiding-in-your-diet -->
+
                 <article class="card rounded-card flex-vertical-layout">
                     <img src="images/nutrition/nyana-stoica-cereal.jpg" alt="Image of a bowl of cereal" loading="lazy">
                     <h3>In Your Diet: Hidden Added Sugars</h3>
@@ -123,45 +119,48 @@
                         sugar, you probably ingest more sugar than you know.
                     </p>
                     <h5>by Lynnette J. Cordero</h5>
-                    <span>Read more</span>
+                    <a href="news.html">Read more</a>
                 </article>
             </div>
         </section>
 
-        <!-- Training section -->
+        <!-- Training section; contains three cards that pop-up -->
         <section>
             <h1>Training</h1>
 
             <div class="grid-3-cols">
                 <article class="pop-card display-card">
-                    <!-- https://unsplash.com/photos/qkQwDvRqQY8 -->
-                    <img src="images/training/jakob-owens-muscle.jpg" alt="Guy with big muscles" loading="lazy">
-                    <h3>Develop Muscle</h3>
-                    <p>Eliminate uncertainty and construct excellent size</p>
+                    <a href="training.html">
+                        <img src="images/training/jakob-owens-muscle.jpg" alt="Guy with big muscles" loading="lazy">
+                        <h3>Develop Muscle</h3>
+                        <p>Eliminate uncertainty and construct excellent size</p>
+                    </a>
                 </article>
+
                 <article class="pop-card display-card">
-                    <!-- https://unsplash.com/photos/pAlhyoKWlPo -->
-                    <img src="images/training/milan-csizmadia-strength.jpg" alt="Guy doing Pull-Up" loading="lazy">
-                    <h3>Become Stronger</h3>
-                    <p>Improve your fitness, advance, and surpass your PR</p>
+                    <a href="training.html">
+                        <img src="images/training/milan-csizmadia-strength.jpg" alt="Guy doing Pull-Up" loading="lazy">
+                        <h3>Become Stronger</h3>
+                        <p>Improve your fitness, advance, and surpass your PR</p>
+                    </a>
                 </article>
+
                 <article class="pop-card display-card">
-                    <!-- https://unsplash.com/photos/Y1drF0Y3Oe0 -->
-                    <img src="images/training/tyler-nix-fit-woman.jpg" alt="Fit woman running" loading="lazy">
-                    <h3>Lose Weight</h3>
-                    <p>Burn fat properly to maintain size and strength</p>
+                    <a href="training.html">
+                        <img src="images/training/tyler-nix-fit-woman.jpg" alt="Fit woman running" loading="lazy">
+                        <h3>Lose Weight</h3>
+                        <p>Burn fat properly to maintain size and strength</p>
+                    </a>
                 </article>
             </div>
         </section>
 
-        <!-- Nutrition section -->
+        <!-- Nutrition section; contains three articles -->
         <section>
             <h1>Nutrition</h1>
 
             <div class="grid-3-cols">
-                <!-- https://blog.myfitnesspal.com/clean-green-mango-kale-smoothie/ -->
                 <article class="card rounded-card flex-vertical-layout">
-                    <!--  -->
                     <img src="images/nutrition/clean-green-mango-kale-smoothie-752x472.jpg" alt="Green mango smoothie"
                         loading="lazy">
                     <h3>Clean Green Mango Kale Smoothie</h3>
@@ -169,11 +168,10 @@
                         A smoothie is a simple method to get the additional greens you need in your diet.
                     </p>
                     <h5>by Drucilla D. Doris</h5>
-                    <span>Read more</span>
+                    <a href="nutrition.html#recipes">Read more</a>
                 </article>
-                <!-- https://blog.myfitnesspal.com/pina-colada-pops-with-chocolate-coconut-shells/ -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!--  -->
                     <img src="images/nutrition/pina-colada-pop-752x472.jpg" alt="Pina colada popsicles" loading="lazy">
                     <h3>Pina Colada Popsicles with Chocolate-Coconut Shells</h3>
                     <p>
@@ -182,11 +180,10 @@
                         of juicy, ripe pineapple.
                     </p>
                     <h5>by Tammie C. Hice</h5>
-                    <span>Read more</span>
+                    <a href="nutrition.html#recipes">Read more</a>
                 </article>
-                <!-- https://blog.myfitnesspal.com/spicy-burgers-with-tahini-sauce-and-harissa-carrot-slaw/ -->
+
                 <article class="card rounded-card flex-vertical-layout">
-                    <!--  -->
                     <img src="images/nutrition/spicy-burgers-with-tahini-sauce-and-harissa-carrot-slaw-752x472.jpg"
                         alt="Burgers with tahini sauce" loading="lazy">
                     <h3>Spicy Burgers With Tahini Sauce and Harissa Carrot Slaw</h3>
@@ -196,7 +193,7 @@
                         sauce, and warm whole-grain naan.
                     </p>
                     <h5>by William A. Shirley</h5>
-                    <span>Read more</span>
+                    <a href="nutrition.html#recipes">Read more</a>
                 </article>
             </div>
 
