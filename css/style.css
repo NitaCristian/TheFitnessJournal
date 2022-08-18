@@ -18,24 +18,64 @@ main {
     background-color: white;
 }
 
-@media (min-width: 576px) {
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
     .container {
-        max-width: 540px;
+        max-width: 100vw;
+    }
+
+    .grid-3-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .footer-newsletter {
+        margin-top: 1rem;
     }
 }
 
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 460px;
+    }
+
+    .grid-3-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        padding: 0;
     }
 }
 
-@media (min-width: 992px) {
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 750px;
+    }
+
+    .grid-3-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2-cols {
+        align-items: center;
     }
 }
 
+/* Desktop */
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
