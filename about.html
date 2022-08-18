@@ -60,19 +60,30 @@
 
     <!-- Main is a container for all the content specific for this about page; about us, FAQ, contact us, and location -->
     <main class="container">
+        <!-- Top section with title and a description -->
+        <section>
+            <h1 class="title">About Us</h1>
+
+            <p class="text">
+                Who we are and what we do!
+            </p>
+        </section>
+
         <!-- About us section -->
         <section>
             <h1>About Us</h1>
 
             <p>
-                The Fitness Report is a small online publication started by a group of passionate people. Our goal is to
-                deliver quality and science-based information to a broad audience in an effort to change minds and
-                empower
-                people to lead better, healthier, and more satisfying lives.
-                <br>
-                Our readers may come from different backgrounds with different opportunities
-
-                NOT FINISHED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                The Fitness Report is a small online publication started by a group of passionate people.
+                Our goal is to deliver quality and science-based information to a broad audience in an effort to change
+                minds and empower people to lead better, healthier, and more satisfying lives.
+                <br><br>
+                It all started with when people at our local gym kept asking us for adivce on exercises and nutrition.
+                We then decided to spread our knowledge with a broader auidence, but also expand it with the help of
+                people around the world.
+                <br><br>
+                Our readers may come from different backgrounds with different opportunities, but we are sure that we
+                have everything for everybody.
             </p>
         </section>
 
@@ -108,27 +119,27 @@
         <section>
             <h1>Contact Us</h1>
 
-            <p>Send an Enquiry to our Team</p>
+            <p>Send an Enquiry to our Team!</p>
 
             <form>
-                <div>
+                <div class="form-section">
                     <label>Name
                         <input class="field" type="text" placeholder="John Doe" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="form-section">
                     <label for="email">Email</label>
                     <input class="field" type="email" id="email" placeholder="example@email.com" required>
                 </div>
 
-                <div>
+                <div class="form-section">
                     <label for="message">Message</label>
                     <textarea class="field" name="message" id="message" placeholder="Your message to us..." required
                         cols="30" rows="10"></textarea>
                 </div>
 
-                <div>
+                <div class="form-section">
                     <input type="checkbox" name="terms" id="terms" required>
                     <label for="terms">I have read and agree to the Terms and Conditions, the Privacy Policy.</label>
                 </div>

@@ -58,10 +58,20 @@
     </header>
 
     <main class="container">
+        <!-- Top section with title and a description -->
+        <section>
+            <h1 class="title">Training</h1>
+
+            <p class="text">
+                You are what you eat, so don't be fast, cheap, easy, or fake.
+            </p>
+        </section>
+
+        <!-- Recipes section -->
         <section>
             <h1>Recipes</h1>
 
-            <div class="grid-3-cols">
+            <div class="grid-3-cols" id="recipes">
                 <!-- https://blog.myfitnesspal.com/clean-green-mango-kale-smoothie/ -->
                 <article class="card rounded-card flex-vertical-layout">
                     <!--  -->
@@ -102,7 +112,7 @@
                     <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/oven-baked-egg-spinach-bacon/ -->
-                <article class="card rounded-card flex-vertical-layout">
+                <article class="card rounded-card flex-vertical-layout hidden">
                     <!--  -->
                     <img src="images/nutrition/baked-eggs_2-662x472.jpg" alt="Oven-Baked Egg" loading="lazy">
                     <h3>Oven-Baked Egg with Spinach & Bacon</h3>
@@ -118,7 +128,7 @@
                     <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/bacon-potato-breakfast-tacos/ -->
-                <article class="card rounded-card flex-vertical-layout">
+                <article class="card rounded-card flex-vertical-layout hidden">
                     <!--  -->
                     <img src="images/nutrition/breakfast-tacos_vertical2-733x472.jpg" alt="Bacon potato tacos"
                         loading="lazy">
@@ -134,7 +144,7 @@
                     <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/gnocchi-cauliflower-skillet-casserole/ -->
-                <article class="card rounded-card flex-vertical-layout">
+                <article class="card rounded-card flex-vertical-layout hidden">
                     <!--  -->
                     <img src="images/nutrition/gnocchi-cauliflower-skillet-casserole-752x472.jpg"
                         alt="Gnocchi-Cauliflower Skillet" loading="lazy">
@@ -149,7 +159,7 @@
                     <span>Read more</span>
                 </article>
                 <!-- https://blog.myfitnesspal.com/chocolatey-brownie-yogurt-parfaits/ -->
-                <article class="card rounded-card flex-vertical-layout">
+                <article class="card rounded-card flex-vertical-layout hidden">
                     <!--  -->
                     <img src="images/nutrition/chocolatey-brownie-yogurt-parfaits-752x472.jpg"
                         alt="Chocolatey Brownie-Yogurt" loading="lazy">
@@ -166,79 +176,83 @@
                     <span>Read more</span>
                 </article>
             </div>
+
+            <div class="flex-center">
+                <button class="btn" id="loadmore">Load more</button>
+            </div>
         </section>
 
+        <!-- Diets section -->
         <section>
             <h1>Diets</h1>
 
             <div class="grid-3-cols">
                 <!-- https://chopra.com/articles/10-popular-diets-explained -->
-                <article class="showcase-card test1">
-                    <h2>The Ketogenic Diet</h2>
+                <article class="pop-card card rounded-card flex-vertical-layout">
+                    <h3>The Ketogenic Diet</h3>
                     <!-- https://unsplash.com/photos/jUPOXXRNdcA -->
                     <img src="images/nutrition/brooke-lark-keto-food.jpg" alt="Plate with vegetables" loading="lazy">
-                    <!-- <p>
-                        A very low carbohydrate and high protein and fat diet is known as the ketogenic diet. The goal
-                        is to
-                        trick the body into going into a state of ketosis, when it uses fat for fuel instead of the
-                        body's
-                        typical supply of glucose and other carbs high in glucose.
-                    </p> -->
+                    <p>
+                        A very low carbohydrate and high protein and fat diet is known as the ketogenic diet.
+                        <br>
+                        The goal is to trick the body into going into a state of ketosis, when it uses fat for fuel
+                        instead of the body's typical supply of glucose and other carbs high in glucose.
+                    </p>
                     <span>Read more</span>
                 </article>
-                <article class="showcase-card test1">
-                    <h2>Vegan</h2>
+                <article class="pop-card card rounded-card flex-vertical-layout">
+                    <h3>Vegan</h3>
                     <!-- https://unsplash.com/photos/IGfIGP5ONV0 -->
                     <img src="images/nutrition/anna-pelzer-vegan-vegetables.jpg" alt="Bowl of vegetables"
                         loading="lazy">
                     <p>
                         Veganism is a diet and way of life which forbids the use of any animal products, including
-                        dairy,
-                        honey,
-                        and eggs. When practiced correctly, the vegan diet can be sustaining, filling, and have a
-                        variety of
-                        health benefits, such as reducing body weight, blood pressure, and the prevalence of
-                        cardiovascular
-                        disease.
+                        dairy, honey, and eggs.
+                        <br>
+                        When practiced correctly, the vegan diet can be sustaining, filling, and
+                        have a variety of health benefits, such as reducing body weight, blood pressure, and the
+                        prevalence of cardiovascular disease.
                     </p>
                     <span>Read more</span>
                 </article>
-                <article class="showcase-card test1">
-                    <h2>Whole Food</h2>
+                <article class="pop-card card flex-vertical-layout">
+                    <h3>Whole Food</h3>
                     <!-- https://unsplash.com/photos/-gOUx23DNks -->
                     <img src="images/nutrition/jacopo-maia-whole-food.jpg" alt="Vegetables at a market" loading="lazy">
                     <p>
                         The most fundamental and straightforward eating style is the whole food diet. It entails
-                        consuming
-                        food
-                        in its natural state with little processing. As processed foods, sweets, fast foods, and fried
-                        foods
-                        are
-                        removed from your plate and you return to simple, clean eating, a whole food diet tends to
-                        improve
-                        your
-                        health and vitality.
+                        consuming food in its natural state with little processing.
+                        <br>
+                        As processed foods, sweets, fast foods, and fried foods are removed from your plate and you
+                        return to simple, clean eating, a whole food diet tends to improve your health and vitality.
                     </p>
                     <span>Read more</span>
                 </article>
             </div>
         </section>
 
-        <!-- caousel -->
-        <section>
+        <!-- Supplements section -->
+        <section class="relative">
             <h1>Supplements</h1>
 
-            <div class="grid-3-cols">
+            <button class="circle-button left-button">
+                <img src="images/chevron-left-solid.svg" alt="Chevron left svg">
+            </button>
+            <button class="circle-button right-button">
+                <img src="images/chevron-right-solid.svg" alt="Chevron right svg">
+            </button>
+
+            <div class="grid-3-cols" id="supplements">
                 <!-- https://www.naturalplus.ro/ -->
                 <article class="card rounded-card flex-vertical-layout">
                     <h3>L-Carnitine</h3>
                     <img src="images/nutrition/carnitine-natural-plus.png" alt="L-Carnitine" loading="lazy">
                     <p>
                         L-Carnitine is a food supplement in liquid form recommended for athletes and active people, for
-                        more
-                        energy and fat burning. It is recommended for burning fat together with physical exercises and a
-                        proper
-                        diet, but also in moments of fatigue and mental exhaustion.
+                        more energy and fat burning.
+                        <br>
+                        It is recommended for burning fat together with physical exercises
+                        and a proper diet, but also in moments of fatigue and mental exhaustion.
                     </p>
                 </article>
                 <article class="card rounded-card flex-vertical-layout">
@@ -246,10 +260,10 @@
                     <img src="images/nutrition/creatine-natural-plus.png" alt="Creatine Monohydrate" loading="lazy">
                     <p>
                         Creatine is a food supplement that contains 100% pure micronized creatine monohydrate, without
-                        sugar,
-                        fats or additives. Increases the intensity of training and Stimulates growth in muscle mass.
-                        Administer
-                        1 scoop (5 g) dissolved in 300 ml of water or juice.
+                        sugar, fats or additives.
+                        <br>
+                        Increases the intensity of training and Stimulates growth in muscle
+                        mass. Administer 1 scoop (5 g) dissolved in 300 ml of water or juice.
                     </p>
                 </article>
                 <article class="card rounded-card flex-vertical-layout">
@@ -257,20 +271,20 @@
                     <img src="images/nutrition/pre-workout-natural-plus.png" alt="Pre-Workout" loading="lazy">
                     <p>
                         This pre-workout has a complex formula, containing effective and powerful ingredients to support
-                        an
-                        intense and long-lasting workout. Explosive energy during training, Stimulates focus and
-                        concentration
-                        and provides a strong premix of vitamins and minerals.
+                        an intense and long-lasting workout.
+                        <br>
+                        Explosive energy during training, Stimulates focus and
+                        concentration and provides a strong premix of vitamins and minerals.
                     </p>
                 </article>
-                <article class="card rounded-card flex-vertical-layout">
+                <article class="card rounded-card flex-vertical-layout hidden">
                     <h3>Hydrowhey Protein</h3>
                     <img src="images/nutrition/whey-protein-natural-plus.png" alt="Hydrowhey Protein" loading="lazy">
                     <p>
                         Hydrowhey Protein Premium is a dietary supplement based on hydrolyzed whey protein powder.
+                        <br>
                         Contains 33 g of WPH hydrolyzed whey protein in each 35 g serving, Low content of Carbohydrates
-                        and
-                        Fats. It is widely used in diets to replace a meal and to maintain quality muscle mass.
+                        and Fats. It is widely used in diets to replace a meal and to maintain quality muscle mass.
                     </p>
                 </article>
             </div>
